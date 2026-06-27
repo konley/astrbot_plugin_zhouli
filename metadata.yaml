@@ -1,0 +1,11 @@
+name: astrbot_plugin_zhouli
+desc: 合乎周礼——将现代中文改写为一本正经又略显荒唐的"周礼白话翻译腔"，调用 AstrBot 已配置的大模型。
+version: 1.0.0
+author: konley
+display_name: 合乎周礼
+repo: https://github.com/konley/astrbot_plugin_zhouli
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - telegram
+astrbot_version: ">=3.5.0"

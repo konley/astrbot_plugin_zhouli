@@ -1,0 +1,46 @@
+{
+  "command_prefix": {
+    "description": "触发前缀",
+    "type": "string",
+    "default": "周礼",
+    "hint": "消息以该关键词开头时触发；也用于 @机器人 和引用消息检测"
+  },
+  "default_length": {
+    "description": "默认篇幅",
+    "type": "string",
+    "default": "成礼",
+    "options": ["小礼", "成礼", "大礼"],
+    "hint": "未指定篇幅时的默认档位：小礼(70-130字) / 成礼(150-260字) / 大礼(280-450字)"
+  },
+  "default_tone": {
+    "description": "默认辞气",
+    "type": "string",
+    "default": "自动",
+    "options": ["自动", "温言", "辩经", "圆场", "痛心"],
+    "hint": "未指定辞气时的默认选择：自动(根据语境判定) / 温言(体谅劝说) / 辩经(论证反问) / 圆场(另立名分) / 痛心(郑重谴责)"
+  },
+  "cooldown": {
+    "description": "用户冷却时间（秒）",
+    "type": "int",
+    "default": 5,
+    "hint": "同一用户在该时间内重复触发会被拦截"
+  },
+  "ignore_slash": {
+    "description": "忽略指令前的 / 或 # 前缀",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后 /周礼、#周礼 和 周礼 都能触发"
+  },
+  "system_prompt": {
+    "description": "周礼改写系统提示词（留空使用内置默认）",
+    "type": "text",
+    "default": "",
+    "hint": "可自定义改写风格与规则，留空则使用内置的完整周礼提示词"
+  },
+  "show_style_tag": {
+    "description": "在末尾显示（篇幅、辞气）标记",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后输出末尾追加如（成礼、强行圆场），标识本次使用的篇幅和辞气"
+  }
+}
